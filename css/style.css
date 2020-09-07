@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    font-family: 'Syne', sans-serif;
+}
+
+.nav-bar{
+    height: 70px;
+}
+
+.nav-bar ul {
+    display: flex; 
+    justify-content: space-between;
+}
+
+ul .nav-item {
+    display: flex; 
+    align-items: center;
+}
+
+ul .nav-item li{
+    list-style-type: none;
+}
+.container h1 {
+    font-family: 'Syne', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+.conteudo{
+    display: flex;
+}
+.imagens img{
+    width: 500px;
+    border-radius: 10px;
+}
+.img-cursos{
+    margin: 50px 20px 30px 20px;
+}
+.descCursos , .titulo , .descricao{
+    text-align: left;
+    padding-left: 30px;
+}
+.descricao{
+    padding-left: 30px;
+}
+.titulo, .descricao{
+    font-family: 'Syne', sans-serif;
+}
+#rodape{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(224, 224, 224);
+    margin: 100px 30px 10px 30px;
+    padding: 20px;
+    border-radius: 10px;
+} 
+.localizacao,
+.contato {
+    display: flex;
+    align-items: center;
+}
+.apresentacao{
+    background-color: rgb(224, 224, 224);
+}
+.preco,
+.duracao{
+    padding-left: 30px;
+}
+.conteudo{
+    background-color: rgb(224, 224, 224);
+    border-radius: 10px;
+}
