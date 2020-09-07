@@ -8,6 +8,9 @@ h1{
     text-align: center;
     font-family: 'Syne', sans-serif;
 }
+#icone{
+    margin-right: 5px;
+}
 
 .nav-bar{
     height: 70px;
@@ -35,7 +38,7 @@ ul .nav-item li{
     display: flex;
 }
 .imagens img{
-    width: 500px;
+    width: 100%;
     border-radius: 10px;
 }
 .img-cursos{
@@ -58,6 +61,7 @@ ul .nav-item li{
     margin: 100px 30px 10px 30px;
     padding: 20px;
     border-radius: 10px;
+
 } 
 .localizacao,
 .contato {
@@ -74,4 +78,26 @@ ul .nav-item li{
 .conteudo{
     background-color: rgb(224, 224, 224);
     border-radius: 10px;
+}
+
+@media(max-width: 600px){
+    .conteudo
+    {
+        display: block;
+    }.conteudo .img-cursos{
+        width: 100%;
+    }
+    #rodape {
+        display: block;
+    }
+
+}
+@media (min-width: 1200px){
+    .conteudo{
+        display: flex;
+    }
+    .imagens img{
+        width: 700px;
+        border-radius: 10px;
+    }
 }
