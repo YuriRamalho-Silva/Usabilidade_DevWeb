@@ -2,16 +2,18 @@
 <html lang="pt-br">
 
 <head>
+    <title>Ramalho Cursos</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramalho Cursos</title>
     <script src="https://kit.fontawesome.com/da77f520d1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <style>
         .item,
-        p {
+        .valor {
             font-family: 'Syne', sans-serif;
-            text-align: center ;
+            text-align: center;
         }
 
         h2 {
@@ -30,7 +32,7 @@
             </a>
             <div class="nav-item">
                 <span>
-                    <i id= "icone" class="fas fa-home"></i>
+                    <i id="icone" class="fas fa-home"></i>
                 </span>
                 <li style="margin-right: 10px;" class="item"> Home </li>
 
@@ -47,81 +49,248 @@
     </section>
     <section class="img-cursos">
         <div class="conteudo">
-            <div class="imagens">
-                <img src="./img/ads.gif" alt="ads">
-            </div>
-            <div class="descCursos">
-                <p class="titulo">Tecnólogo Análise e Desenvolvimento de Sistemas</p>
-                <p class="descricao"><span style="color:#f00;">Sobre o Curso:</span>O tecnólogo em Análise e Desenvolvimento de Sistemas é um profissional de nível
-                    superior que analisa, projeta, documenta, especifica, testa, implementa e cuida da manutenção de
-                    sistemas computacionais e software.</p>
-                <p class="preco"><span style="color:#f00;">Valor:</span> R$1,200,00 Mensais</p>
-                <p class="duracao"><span style="color:#f00;">Duração:</span> 15 Meses</p>
-            </div>
-        </div>
-    </section>
-    <section class="img-cursos">
-        <div class="conteudo">
-            <div class="descCursos">
-                <p class="titulo">Tecnólogo em Design gráfico</p>
-                <p class="descricao"><span style="color:#f00;">Sobre o Curso:</span>O curso de Design forma o profissional capacitado para desenvolver conceitos
-                    visuais para peças gráficas e materiais. Quando desenvolve um produto, se preocupa com forma,
-                    funcionalidade, estrutura e estética.</p>
-                    <p class="preco"><span style="color:#f00;">Valor:</span> R$1,500,00 Mensais</p>
-                    <p class="duracao"><span style="color:#f00;">Duração:</span> 15 Meses</p>
-            </div>
+            <div class="row">
 
-            <div class="imagens">
-                <img src="./img/design.gif" alt="ads">
-            </div>
-        </div>
-    </section>
-    <section class="img-cursos">
-        <div class="conteudo">
-            <div class="imagens">
-                <img src="./img/fotografia.gif" alt="ads">
-            </div>
-            <div class="descCursos">
-                <p class="titulo">Tecnólogo em Fotografia</p>
-                <p class="descricao"><span style="color:#f00;">Sobre o Curso:</span>A faculdade de Fotografia prepara o profissional para utilizar diversas
-                    técnicas de
-                    produção, captação, finalização e tratamento de imagens. Os estudantes aprendem sobre
-                    instrumentos e
-                    processos digitais e algumas faculdades incluem também o processo analógico em sua grade
-                    curricular.
-                </p>
-                <p class="preco"><span style="color:#f00;">Valor:</span> R$800,00 Mensais</p>
-                <p class="duracao"><span style="color:#f00;">Duração:</span> 15 Meses</p>
-            </div>
-        </div>
-    </section>
-    <section class="img-cursos">
-        <div class="conteudo">
-            <div class="descCursos">
-                <p class="titulo">Tecnólogo em Marketing</p>
-                <p class="descricao"><span style="color:#f00;">Sobre o Curso:</span>O Tecnólogo em Marketing identifica tendências do mercado consumidor, estuda
-                    oportunidades para venda de produtos e serviços e elabora campanhas com fins comerciais. Sua
-                    principal função é satisfazer clientes e garantir retorno positivo as marcas.</p>
-                    <p class="preco"><span style="color:#f00;">Valor:</span> R$1,300,00 Mensais</p>
-                    <p class="duracao"><span style="color:#f00;">Duração:</span> 15 Meses</p>
-            </div>
+                <div class="col-md-6 col-12">
+                    <div class="imagens">
+                        <img class="img-fluid" src="./img/ads.gif" alt="ads">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="descCursos">
+                        <p class="titulo">Tecnólogo Análise e Desenvolvimento de Sistemas</p>
+                        <p class="descricao valor"><span style="color:#f00;">Sobre o Curso:</span>O tecnólogo em Análise
+                            e
+                            Desenvolvimento de Sistemas é um profissional de nível
+                            superior que analisa, projeta, documenta, especifica, testa, implementa e cuida da
+                            manutenção de
+                            sistemas computacionais e software.</p>
+                        <p class="preco valor"><span style="color:#f00;">Valor:</span> R$1,200,00 Mensais</p>
+                        <p class="duracao valor"><span style="color:#f00;">Duração:</span> 15 Meses</p>
+                    </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+                        Quero me inscrever!
+                    </button>
 
-            <div class="imagens">
-                <img src="./img/mkt.gif" alt="ads">
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Bem Vindo!</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Voce foi cadastrado com sucesso!! Bons estudos!!
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <section class="img-cursos">
         <div class="conteudo">
-            <div class="imagens">
-                <img src="./img/adm.gif" alt="ads">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="descCursos">
+                        <p class="titulo">Tecnólogo em Design gráfico</p>
+                        <p class="descricao"><span style="color:#f00;">Sobre o Curso:</span>O curso de Design forma o
+                            profissional capacitado para desenvolver conceitos
+                            visuais para peças gráficas e materiais. Quando desenvolve um produto, se preocupa com
+                            forma,
+                            funcionalidade, estrutura e estética.</p>
+                        <p class="preco"><span style="color:#f00;">Valor:</span> R$1,500,00 Mensais</p>
+                        <p class="duracao"><span style="color:#f00;">Duração:</span> 15 Meses</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#exampleModal">
+                            Quero me inscrever!
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Quero me inscrever!</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Voce foi cadastrado com sucesso!! Bons estudos!!
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-success"
+                                            data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="imagens">
+                        <img class="img-fluid" src="./img/design.gif" alt="ads">
+                    </div>
+                </div>
             </div>
-            <div class="descCursos">
-                <p class="titulo">Tecnólogo em Administração: Comercio de Exterior</p>
-                <p class="descricao"><span style="color:#f00;">Sobre o Curso:</span>O profissional de Comércio Exterior domina as técnicas e os métodos de compra e
-                    venda de produtos e serviços entre empresas e governos de diferentes países.</p>
-                    <p class="preco"><span style="color:#f00;">Valor:</span> R$1,000,00</p>
-                    <p class="duracao"><span style="color:#f00;">Duração:</span> 15 Meses</p>
+        </div>
+    </section>
+    <section class="img-cursos">
+        <div class="conteudo">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="imagens">
+                        <img class="img-fluid" src="./img/fotografia.gif" alt="ads">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="descCursos">
+                        <p class="titulo">Tecnólogo em Fotografia</p>
+                        <p class="descricao"><span style="color:#f00;">Sobre o Curso:</span>A faculdade de Fotografia
+                            prepara o
+                            profissional para utilizar diversas
+                            técnicas de
+                            produção, captação, finalização e tratamento de imagens. Os estudantes aprendem sobre
+                            instrumentos e
+                            processos digitais e algumas faculdades incluem também o processo analógico em sua grade
+                            curricular.
+                        </p>
+                        <p class="preco"><span style="color:#f00;">Valor:</span> R$800,00 Mensais</p>
+                        <p class="duracao"><span style="color:#f00;">Duração:</span> 15 Meses</p>
+                    </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+                        Quero me inscrever!
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Quero me inscrever!</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Voce foi cadastrado com sucesso!! Bons estudos!!
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="img-cursos">
+        <div class="conteudo">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="descCursos">
+                        <p class="titulo">Tecnólogo em Marketing</p>
+                        <p class="descricao"><span style="color:#f00;">Sobre o Curso:</span>O Tecnólogo em Marketing
+                            identifica
+                            tendências do mercado consumidor, estuda
+                            oportunidades para venda de produtos e serviços e elabora campanhas com fins comerciais. Sua
+                            principal função é satisfazer clientes e garantir retorno positivo as marcas.</p>
+                        <p class="preco"><span style="color:#f00;">Valor:</span> R$1,300,00 Mensais</p>
+                        <p class="duracao"><span style="color:#f00;">Duração:</span> 15 Meses</p>
+                    </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+                        Quero me inscrever!
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Quero me inscrever!</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Voce foi cadastrado com sucesso!! Bons estudos!!
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="imagens">
+                        <img class="img-fluid" src="./img/mkt.gif" alt="ads">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="img-cursos">
+        <div class="conteudo">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="imagens">
+                        <img class="img-fluid" src="./img/adm.gif" alt="ads">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="descCursos">
+                        <p class="titulo">Tecnólogo em Administração: Comercio de Exterior</p>
+                        <p class="descricao"><span style="color:#f00;">Sobre o Curso:</span>O profissional de Comércio
+                            Exterior
+                            domina as técnicas e os métodos de compra e
+                            venda de produtos e serviços entre empresas e governos de diferentes países.</p>
+                        <p class="preco"><span style="color:#f00;">Valor:</span> R$1,000,00</p>
+                        <p class="duracao"><span style="color:#f00;">Duração:</span> 15 Meses</p>
+                    </div>
+                         <!-- Button trigger modal -->
+                         <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+                            Quero me inscrever!
+                        </button>
+        
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Quero me inscrever!</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Voce foi cadastrado com sucesso!! Bons estudos!!
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
             </div>
         </div>
     </section>
@@ -130,19 +299,28 @@
     <footer id="rodape">
         <div class="localizacao">
             <span>
-                <i id = "icone" class="fas fa-map-marked-alt"></i>
+                <i class="fas fa-map-marked-alt mr-2"></i>
             </span>
-            <p>Rua Roberto Robinson N° 6 - Jardim Boa Vista</p>
+            <p class="endereco">Rua Roberto Robinson N° 6 - Jardim Boa Vista</p>
         </div>
 
         <div class="contato">
             <span>
-                <i id = "icone" class="fab fa-whatsapp"></i>
+                <i class="fab fa-whatsapp mr-2"></i>
             </span>
-            <p> WhatsApp: 11 9 9574-6785 </p>
+            <p>WhatsApp: 11 9 9574-6785 </p>
         </div>
-    </footer>
 
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
